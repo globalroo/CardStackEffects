@@ -1,0 +1,37 @@
+{
+	"parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module"
+	},
+	"globals": {
+		"document": false,
+		"require": false,
+		"describe": false,
+		"test": false,
+		"expect": false,
+		"module": false,
+		"__dirname": false,
+		"process": false,
+		"beforeEach": false,
+		"afterEach": false,
+		"it": false,
+		"jest": false,
+		"navigator": false,
+		"window": false,
+		"Modernizr": false,
+		"setTimeout": false
+	},
+	"extends": [
+		"prettier",
+		"eslint:recommended",
+		"plugin:react/recommended"
+	],
+	"plugins": [
+		"react",
+		"prettier"
+	],
+    "rules": {
+		"prettier/prettier": "error"
+	}
+}

@@ -1,0 +1,108 @@
+/***********************************************/
+/******************** utari ********************/
+/***********************************************/
+
+.stack--utari .stack__item--reject {
+	-webkit-animation: utariReject 0.6s forwards;
+	animation: utariReject 0.6s forwards;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+@-webkit-keyframes utariReject {
+	40% {
+		opacity: 1;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+		-webkit-transform: translate3d(0,-20%,30px);
+		transform: translate3d(0,-20%,30px);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translate3d(0,150%,-300px) rotate3d(1,0,0,-40deg);
+		transform: translate3d(0,150%,-300px) rotate3d(1,0,0,-40deg);
+	}
+}
+
+@keyframes utariReject {
+	40% {
+		opacity: 1;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+		-webkit-transform: translate3d(0,-20%,30px);
+		transform: translate3d(0,-20%,30px);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translate3d(0,150%,-300px) rotate3d(1,0,0,-40deg);
+		transform: translate3d(0,150%,-300px) rotate3d(1,0,0,-40deg);
+	}
+}
+
+.stack--utari .stack__item--accept {
+	-webkit-animation: utariAccept 0.6s forwards;
+	animation: utariAccept 0.6s forwards;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes utariAccept {
+	40% {
+		-webkit-animation-timing-function: cubic-bezier(0.4,1,0.3,1);
+		animation-timing-function: cubic-bezier(0.4,1,0.3,1);
+		-webkit-transform: translate3d(-40%,0,0) scale3d(1.1,1.1,1);
+		transform: translate3d(-40%,0,0) scale3d(1.1,1.1,1);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translate3d(25vw,0,0) translate3d(10%,0,0) scale3d(0.1,0.1,1);
+		transform: translate3d(25vw,0,0) translate3d(10%,0,0) scale3d(0.1,0.1,1);
+	}
+}
+
+@keyframes utariAccept {
+	40% {
+		-webkit-animation-timing-function: cubic-bezier(0.4,1,0.3,1);
+		animation-timing-function: cubic-bezier(0.4,1,0.3,1);
+		-webkit-transform: translate3d(-40%,0,0) scale3d(1.1,1.1,1);
+		transform: translate3d(-40%,0,0) scale3d(1.1,1.1,1);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translate3d(25vw,0,0) translate3d(10%,0,0) scale3d(0.1,0.1,1);
+		transform: translate3d(25vw,0,0) translate3d(10%,0,0) scale3d(0.1,0.1,1);
+	}
+}
+
+/* ...when content has 100% viewport width */
+@media screen and (max-width: 60em) {
+	@-webkit-keyframes utariAccept {
+		40% {
+			-webkit-animation-timing-function: cubic-bezier(0.4,1,0.3,1);
+			animation-timing-function: cubic-bezier(0.4,1,0.3,1);
+			-webkit-transform: translate3d(-40%,0,0) scale3d(1.1,1.1,1);
+			transform: translate3d(-40%,0,0) scale3d(1.1,1.1,1);
+		}
+		100% {
+			opacity: 0;
+			-webkit-transform: translate3d(50vw,0,0) translate3d(10%,0,0) scale3d(0.1,0.1,1);
+			transform: translate3d(50vw,0,0) translate3d(10%,0,0) scale3d(0.1,0.1,1);
+		}
+	}
+
+	@keyframes utariAccept {
+		40% {
+			-webkit-animation-timing-function: cubic-bezier(0.4,1,0.3,1);
+			animation-timing-function: cubic-bezier(0.4,1,0.3,1);
+			-webkit-transform: translate3d(-40%,0,0) scale3d(1.1,1.1,1);
+			transform: translate3d(-40%,0,0) scale3d(1.1,1.1,1);
+		}
+		100% {
+			opacity: 0;
+			-webkit-transform: translate3d(50vw,0,0) translate3d(10%,0,0) scale3d(0.1,0.1,1);
+			transform: translate3d(50vw,0,0) translate3d(10%,0,0) scale3d(0.1,0.1,1);
+		}
+	}
+}

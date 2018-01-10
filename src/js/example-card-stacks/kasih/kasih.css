@@ -1,0 +1,72 @@
+/***********************************************/
+/******************** kasih ********************/
+/***********************************************/
+
+.stack--kasih .stack__item--reject {
+	-webkit-animation: kasihReject 0.4s ease-in forwards;
+	animation: kasihReject 0.4s ease-in forwards;
+}
+
+@-webkit-keyframes kasihReject {
+	to {
+		-webkit-transform: translate3d(-25vw,0,0) translate3d(-60%,0,0);
+		transform: translate3d(-25vw,0,0) translate3d(-60%,0,0);
+	}
+}
+
+@keyframes kasihReject {
+	to {
+		-webkit-transform: translate3d(-25vw,0,0) translate3d(-60%,0,0);
+		transform: translate3d(-25vw,0,0) translate3d(-60%,0,0);
+	}
+}
+
+.stack--kasih .stack__item--accept {
+	-webkit-animation: kasihAccept 0.4s ease-in forwards;
+	animation: kasihAccept 0.4s ease-in forwards;
+}
+
+@-webkit-keyframes kasihAccept {
+	to {
+		-webkit-transform: translate3d(25vw,0,0) translate3d(60%,0,0);
+		transform: translate3d(25vw,0,0) translate3d(60%,0,0);
+	}
+}
+
+@keyframes kasihAccept {
+	to {
+		-webkit-transform: translate3d(25vw,0,0) translate3d(60%,0,0);
+		transform: translate3d(25vw,0,0) translate3d(60%,0,0);
+	}
+}
+
+/* ...when content has 100% vieport width */
+@media screen and (max-width: 60em) {
+	@-webkit-keyframes kasihReject {
+		to {
+			-webkit-transform: translate3d(-50vw,0,0) translate3d(-60%,0,0);
+			transform: translate3d(-50vw,0,0) translate3d(-60%,0,0);
+		}
+	}
+
+	@keyframes kasihReject {
+		to {
+			-webkit-transform: translate3d(-50vw,0,0) translate3d(-60%,0,0);
+			transform: translate3d(-50vw,0,0) translate3d(-60%,0,0);
+		}
+	}
+
+	@-webkit-keyframes kasihAccept {
+		to {
+			-webkit-transform: translate3d(50vw,0,0) translate3d(60%,0,0);
+			transform: translate3d(50vw,0,0) translate3d(60%,0,0);
+		}
+	}
+
+	@keyframes kasihAccept {
+		to {
+			-webkit-transform: translate3d(50vw,0,0) translate3d(60%,0,0);
+			transform: translate3d(50vw,0,0) translate3d(60%,0,0);
+		}
+	}
+}

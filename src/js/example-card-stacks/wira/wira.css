@@ -1,0 +1,53 @@
+/***********************************************/
+/********************* wira ********************/
+/***********************************************/
+
+.stack--wira .stack__item--reject {
+	-webkit-animation: wiraReject 0.5s forwards;
+	animation: wiraReject 0.5s forwards;
+	-webkit-animation-timing-function: cubic-bezier(0.4,1,0.3,1);
+	animation-timing-function: cubic-bezier(0.4,1,0.3,1);
+	-webkit-transform-origin: -150% 50%;
+	transform-origin: -150% 50%;
+}
+
+@-webkit-keyframes wiraReject {
+	to {
+		opacity: 0;
+		-webkit-transform: rotate3d(0,0,1,-60deg);
+		transform: rotate3d(0,0,1,-60deg);
+	}
+}
+
+@keyframes wiraReject {
+	to {
+		opacity: 0;
+		-webkit-transform: rotate3d(0,0,1,-60deg);
+		transform: rotate3d(0,0,1,-60deg);
+	}
+}
+
+.stack--wira .stack__item--accept {
+	-webkit-animation: wiraAccept 0.5s forwards;
+	animation: wiraAccept 0.5s forwards;
+	-webkit-animation-timing-function: cubic-bezier(0.3,1,0.3,1);
+	animation-timing-function: cubic-bezier(0.3,1,0.3,1);
+	-webkit-transform-origin: 250% 50%;
+	transform-origin: 250% 50%;
+}
+
+@-webkit-keyframes wiraAccept {
+	to {
+		opacity: 0;
+		-webkit-transform: rotate3d(0,0,1,60deg);
+		transform: rotate3d(0,0,1,60deg);
+	}
+}
+
+@keyframes wiraAccept {
+	to {
+		opacity: 0;
+		-webkit-transform: rotate3d(0,0,1,60deg);
+		transform: rotate3d(0,0,1,60deg);
+	}
+}

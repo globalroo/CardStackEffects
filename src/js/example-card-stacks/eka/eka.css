@@ -1,0 +1,49 @@
+/***********************************************/
+/******************** eka **********************/
+/***********************************************/
+
+.stack--eka .stack__item--reject {
+	-webkit-animation: ekaReject 0.5s forwards;
+	animation: ekaReject 0.5s forwards;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+@-webkit-keyframes ekaReject {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(-150%,150%,0) rotate3d(0,0,1,-20deg);
+		transform: translate3d(-150%,150%,0) rotate3d(0,0,1,-20deg);
+	}
+}
+
+@keyframes ekaReject {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(-150%,150%,0) rotate3d(0,0,1,-20deg);
+		transform: translate3d(-150%,150%,0) rotate3d(0,0,1,-20deg);
+	}
+}
+
+.stack--eka .stack__item--accept {
+	-webkit-animation: ekaAccept 0.5s forwards;
+	animation: ekaAccept 0.5s forwards;
+	-webkit-transform-origin: -100% 50%;
+	transform-origin: -100% 50%;
+}
+
+@-webkit-keyframes ekaAccept {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(150%,-150%,0) rotate3d(0,0,1,20deg);
+		transform: translate3d(150%,-150%,0) rotate3d(0,0,1,20deg);
+	}
+}
+
+@keyframes ekaAccept {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(150%,-150%,0) rotate3d(0,0,1,20deg);
+		transform: translate3d(150%,-150%,0) rotate3d(0,0,1,20deg);
+	}
+}

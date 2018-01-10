@@ -1,0 +1,64 @@
+/***********************************************/
+/******************** mawar *********************/
+/***********************************************/
+
+.stack--mawar .stack__item--reject {
+	-webkit-animation: mawarReject 0.5s forwards;
+	animation: mawarReject 0.5s forwards;
+}
+
+@-webkit-keyframes mawarReject {
+	to {
+		-webkit-transform: translate3d(-25vw,0,0) translate3d(-60%,0,0);
+		transform: translate3d(-25vw,0,0) translate3d(-60%,0,0);
+	}
+}
+
+@keyframes mawarReject {
+	to {
+		-webkit-transform: translate3d(-25vw,0,0) translate3d(-60%,0,0);
+		transform: translate3d(-25vw,0,0) translate3d(-60%,0,0);
+	}
+}
+
+.stack--mawar .stack__item--accept {
+	-webkit-animation: mawarAccept 0.5s forwards;
+	animation: mawarAccept 0.5s forwards;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+@-webkit-keyframes mawarAccept {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(150px,0,0) scale3d(0.7,0.7,1) rotate3d(0,1,0,90deg);
+		transform: translate3d(150px,0,0) scale3d(0.7,0.7,1) rotate3d(0,1,0,90deg);
+	}
+}
+
+@keyframes mawarAccept {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(150px,0,0) scale3d(0.7,0.7,1) rotate3d(0,1,0,90deg);
+		transform: translate3d(150px,0,0) scale3d(0.7,0.7,1) rotate3d(0,1,0,90deg);
+	}
+}
+
+/* ...when content has 100% vieport width */
+@media screen and (max-width: 60em) {
+
+	@-webkit-keyframes mawarReject {
+		to {
+			-webkit-transform: translate3d(-50vw,0,0) translate3d(-60%,0,0);
+			transform: translate3d(-50vw,0,0) translate3d(-60%,0,0);
+		}
+	}
+
+	@keyframes mawarReject {
+		to {
+			-webkit-transform: translate3d(-50vw,0,0) translate3d(-60%,0,0);
+			transform: translate3d(-50vw,0,0) translate3d(-60%,0,0);
+		}
+	}
+
+}

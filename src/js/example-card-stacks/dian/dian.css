@@ -1,0 +1,49 @@
+/***********************************************/
+/******************** dian *********************/
+/***********************************************/
+
+.stack--dian .stack__item--reject {
+	-webkit-animation: dianReject 0.5s forwards;
+	animation: dianReject 0.5s forwards;
+	-webkit-transform-origin: 50% -300%;
+	transform-origin: 50% -300%;
+}
+
+@-webkit-keyframes dianReject {
+	to {
+		opacity: 0;
+		-webkit-transform: rotate3d(0,0,1,20deg);
+		transform: rotate3d(0,0,1,20deg);
+	}
+}
+
+@keyframes dianReject {
+	to {
+		opacity: 0;
+		-webkit-transform: rotate3d(0,0,1,20deg);
+		transform: rotate3d(0,0,1,20deg);
+	}
+}
+
+.stack--dian .stack__item--accept {
+	-webkit-animation: dianAccept 0.5s forwards;
+	animation: dianAccept 0.5s forwards;
+	-webkit-transform-origin: 50% -300%;
+	transform-origin: 50% -300%;
+}
+
+@-webkit-keyframes dianAccept {
+	to {
+		opacity: 0;
+		-webkit-transform: rotate3d(0,0,1,-20deg);
+		transform: rotate3d(0,0,1,-20deg);
+	}
+}
+
+@keyframes dianAccept {
+	to {
+		opacity: 0;
+		-webkit-transform: rotate3d(0,0,1,-20deg);
+		transform: rotate3d(0,0,1,-20deg);
+	}
+}

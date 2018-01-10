@@ -1,0 +1,49 @@
+/***********************************************/
+/******************** wangi *********************/
+/***********************************************/
+
+.stack--wangi .stack__item--reject {
+	-webkit-animation: wangiReject 0.5s forwards;
+	animation: wangiReject 0.5s forwards;
+	-webkit-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+}
+
+@-webkit-keyframes wangiReject {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg);
+		transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg);
+	}
+}
+
+@keyframes wangiReject {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg);
+		transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg);
+	}
+}
+
+.stack--wangi .stack__item--accept {
+	-webkit-animation: wangiAccept 0.5s forwards;
+	animation: wangiAccept 0.5s forwards;
+	-webkit-transform-origin: 100% 0%;
+	transform-origin: 100% 0%;
+}
+
+@-webkit-keyframes wangiAccept {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 400px,0) rotate3d(0,0,1,-40deg);
+		transform: translate3d(0, 400px,0) rotate3d(0,0,1,-40deg);
+	}
+}
+
+@keyframes wangiAccept {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 400px,0) rotate3d(0,0,1,-40deg);
+		transform: translate3d(0, 400px,0) rotate3d(0,0,1,-40deg);
+	}
+}
