@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Effects for Card Stacks | Codrops</title>
+		<meta name="description" content="Some animation ideas for stacks of cards" />
+		<meta name="keywords" content="stack, cards, effect, ui, animation, inspiration, html, css" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+	<link href="style.bundle.css" rel="stylesheet"></head>
+	<body>
+		<div class="container">
+			<header class="codrops-header color-0">
+				<div class="codrops-links">
+					<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/PullToShare/" title="Previous Demo"><span>Previous Demo</span></a>
+					<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=25356" title="Back to the article"><span>Back to the Codrops article</span></a>
+				</div>
+				<h1><span>Effects for</span> Card Stacks</h1>
+			</header>
+			<div class="content color-1">
+				<h2 class="content__title">Yuda</h2>
+				<ul id="stack_yuda" class="stack stack--yuda">
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/5.png" alt="Tree 5" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_yuda"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_yuda"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-2">
+				<h2 class="content__title">Krisna</h2>
+				<ul id="stack_krisna" class="stack stack--krisna">
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/5.png" alt="Tree 5" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_krisna"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_krisna"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-3">
+				<h2 class="content__title">Wangi</h2>
+				<ul id="stack_wangi" class="stack stack--wangi">
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/7.png" alt="Tree 7" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_wangi"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_wangi"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-4">
+				<h2 class="content__title">Wira</h2>
+				<ul id="stack_wira" class="stack stack--wira">
+					<li class="stack__item"><img src="img/7.png" alt="Tree 7" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_wira"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_wira"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-5">
+				<h2 class="content__title">Slamet</h2>
+				<div class="counter" id="counter">
+					<svg width="40" height="40" viewBox="0 0 60 60">
+						<path d="M55.215 8.397c-0.336-1.32-1.968-2.397-3.63-2.397h-43.17c-1.665 0-3.297 1.077-3.63 2.397l-0.603 3.603h51.633l-0.6-3.603zM58.236 15h-56.475c-1.026 0-1.827 0.882-1.731 1.905l2.769 35.007c0.114 1.182 1.11 2.088 2.298 2.088h49.803c1.191 0 2.184-0.906 2.298-2.088l2.769-35.007c0.099-1.023-0.705-1.905-1.731-1.905zM37.314 25.125c1.554 0 2.814 1.26 2.814 2.814s-1.26 2.814-2.814 2.814-2.814-1.263-2.814-2.817c0-1.551 1.26-2.811 2.814-2.811zM16.5 42l7.458-17.142 8.481 13.728 7.272-3.612 3.789 7.026h-27z"></path>
+					</svg>
+					<span class="text-hidden">Saved Images</span>
+					<span class="counter__number">0</span>
+				</div>
+				<ul id="stack_slamet" class="stack stack--slamet">
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/5.png" alt="Tree 5" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_slamet"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_slamet"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-6">
+				<h2 class="content__title">Utari</h2>
+				<ul id="stack_utari" class="stack stack--utari">
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/5.png" alt="Tree 5" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_utari"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_utari"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-7">
+				<h2 class="content__title">Cinta</h2>
+				<ul id="stack_cinta" class="stack stack--cinta">
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/7.png" alt="Tree 7" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_cinta"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_cinta"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-8">
+				<h2 class="content__title">Eka</h2>
+				<ul id="stack_eka" class="stack stack--eka">
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/5.png" alt="Tree 5" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_eka"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_eka"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-1">
+				<h2 class="content__title">Dian</h2>
+				<ul id="stack_dian" class="stack stack--dian">
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/5.png" alt="Tree 5" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_dian"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_dian"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-6">
+				<h2 class="content__title">Iman</h2>
+				<ul id="stack_iman" class="stack stack--iman">
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/5.png" alt="Tree 5" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_iman"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_iman"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-3">
+				<h2 class="content__title">Iskandar</h2>
+				<ul id="stack_iskandar" class="stack stack--iskandar">
+					<li class="stack__item"><img src="img/7.png" alt="Tree 7" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_iskandar"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_iskandar"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-5">
+				<h2 class="content__title">Kasih</h2>
+				<ul id="stack_kasih" class="stack stack--kasih">
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/7.png" alt="Tree 7" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_kasih"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_kasih"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<div class="content color-2">
+				<h2 class="content__title">Buana</h2>
+				<ul id="stack_buana" class="stack stack--buana">
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/7.png" alt="Tree 7" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+					<li class="stack__item"><img src="img/3.png" alt="Tree 3" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--material button--reject" data-stack="stack_buana"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--material button--accept" data-stack="stack_buana"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+				<div id="radialAction" class="material-circle"></div>
+			</div>
+			<div class="content color-6">
+				<h2 class="content__title">Mawar</h2>
+				<ul id="stack_mawar" class="stack stack--mawar">
+					<li class="stack__item"><img src="img/8.png" alt="Tree 8" /></li>
+					<li class="stack__item"><img src="img/2.png" alt="Tree 2" /></li>
+					<li class="stack__item"><img src="img/4.png" alt="Tree 4" /></li>
+					<li class="stack__item"><img src="img/7.png" alt="Tree 7" /></li>
+					<li class="stack__item"><img src="img/6.png" alt="Tree 6" /></li>
+					<li class="stack__item"><img src="img/1.png" alt="Tree 1" /></li>
+				</ul>
+				<div class="controls">
+					<button class="button button--sonar button--reject" data-stack="stack_mawar"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_mawar"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>
+			</div>
+			<!-- Related demos -->
+			<section class="content content--related color-3">
+				<p><a href="http://www.freepik.com/free-photos-vectors/tree">Tree vector</a> designed by Freepik</p>
+				<p><strong>If you enjoyed this demo you might also like:</strong></p>
+				<a class="media-item" href="http://tympanus.net/Development/StackEffects/">
+					<img class="media-item__img" src="img/related/StackEffects.jpg">
+					<h3 class="media-item__title">Simple Stack Effects</h3>
+				</a>
+				<a class="media-item" href="http://tympanus.net/Development/ElasticStack/">
+					<img class="media-item__img" src="img/related/ElastiStack.jpg">
+					<h3 class="media-item__title">Elastic Stack</h3>
+				</a>
+			</section>
+		</div><!-- /container -->
+	<script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
