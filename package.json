@@ -25,10 +25,12 @@
     "babel-plugin-transform-class-properties": "6.24.1",
     "dynamics.js": "1.1.5",
     "font-awesome": "4.7.0",
+    "gh-pages": "1.1.0",
     "mobile-detect": "1.4.1"
   },
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "webpack -p"
+	"build": "webpack -p",
+	"deploy": "yarn build && gh-pages -d build"
   }
 }
