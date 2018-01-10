@@ -28,7 +28,7 @@ Some effect inspiration for card stacks. The idea is to show animation ideas for
 </div>
 ```
 ```js
-	const myStack = new CardStack("example", document.getElementById("stack_example"), options);
+const myStack = new CardStack("example", document.getElementById("stack_example"), options);
 ```
 The individual stacks in the demo can be quickly created by using their specific class in the repo. For example:
 
