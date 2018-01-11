@@ -199,13 +199,15 @@ export class CardStack {
 		item.style.zIndex = zIndex;
 		item.style.display = "block";
 
-		dynamics.animate(
-			item,
-			{
-				translateZ: translateZ
-			},
-			this.options.stackItemsAnimation
-		);
+		setTimeout(() => {
+			dynamics.animate(
+				item,
+				{
+					translateZ: translateZ
+				},
+				this.options.stackItemsAnimation
+			);
+		}, 0);
 	}
 
 	getAnimationProps(preAnimation, ix, visibleCards) {
